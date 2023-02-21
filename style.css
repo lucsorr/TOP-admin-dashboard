@@ -1,0 +1,16 @@
+* {
+  border: 2px solid blue;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+  background-color: #1992d4;
+}
+
+.main-content {
+  background-color: #e2e8f0;
+}
