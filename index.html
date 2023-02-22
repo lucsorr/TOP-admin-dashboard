@@ -10,37 +10,53 @@
 </head>
 <body>
   <nav class="sidebar">
-    <div class="sidebar-logo">Dashboard</div>
-    <div>Home</div>
-    <div>Profile</div>
-    <div>Messages</div>
-    <div>History</div>
-    <div>Tasks</div>
-    <div>Communities</div>
-    <div>Settings</div>
-    <div>Support</div>
-    <div>Privacy</div>
+    <div class="sidebar-top">
+      <div class="logo"><img src="images/view-grid.svg" alt=""> Dashboard</div>
+    </div>
+
+    <div class="sidebar-middle">
+      <div class="nav-link"><img src="images/home.svg"> Home</div>
+      <div class="nav-link"><img src="images/card-account-details-outline.svg"> Profile</div>
+      <div class="nav-link"><img src="images/message-reply.svg"> Messages</div>
+      <div class="nav-link"><img src="images/clock-time-three.svg"> History</div>
+      <div class="nav-link"><img src="images/note-multiple.svg"> Tasks</div>
+      <div class="nav-link"><img src="images/account-group.svg"> Communities</div>
+    </div>
+    
+    <div class="sidebar-bottom">
+      <div class="nav-link"><img src="images/cog.svg">  Settings</div>
+      <div class="nav-link"><img src="images/help-box.svg">  Support</div>
+      <div class="nav-link"><img src="images/shield-check.svg">  Privacy</div>
+    </div>
   </nav>
 
-  <main>
+  <main class="main">
+
     <header class="main-header">
-      <div class="header-search">Morgan Oakley</div>
-      <div class="header-bottom">
-        Hi there, Morgan Oakley (@morgan) 
-        <input type="button" value="New">
-        <input type="button" value="Upload">
-        <input type="button" value="Share">
+
+      <div class="searchbar">Search Bar</div>
+      <div class="user-status">Morgan Oakley</div>
+
+
+      <div class="user-greeting">Hi there, Morgan Oakley (@morgan)</div>
+      <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
       </div>
     </header>
+
     <main class="main-content">
       <div class="projects">
         <p>Your projects</p>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="project-cards">
+          <div class="card">Super Cool Project</div>
+          <div class="card">Less Cool Project</div>
+          <div class="card">Impossible App</div>
+          <div class="card">Easy Peasy App</div>
+          <div class="card">Ad Blocker</div>
+          <div class="card">Money Maker</div>
+        </div>
       </div>
 
       <div class="announcements">
