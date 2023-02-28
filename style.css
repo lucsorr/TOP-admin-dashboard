@@ -153,7 +153,6 @@ body {
   align-self: flex-start;
 }
 
-
 .buttons {
   display: flex;
   justify-content: end;
@@ -174,6 +173,7 @@ body {
 .buttons > button:hover {
   color: #1992d4;
   background-color: #c4eaff;
+  transform: scale(1.1);
 }
 
 
@@ -183,11 +183,12 @@ body {
 .main-content {
   grid-area: main-content;
   display: grid;
-  grid-template-columns: 3fr 250px;
+  grid-template-columns: 3fr 285px;
   grid-template-areas: 
     "projects side"
   ;
   padding: 20px;
+  gap: 15px;
 }
 
 .projects {
@@ -251,12 +252,93 @@ body {
   display: grid;
 }
 
+/* Side area ------------------------------------------------------ */
+
+.main-side {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  gap: 30px;
+}
 
 .announcements {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  gap: 10px;
+}
 
+.announcements-title {
+  font-weight: bold;
+  height: auto;
+}
+
+.announcements-content {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 0.7rem;
+  padding: 25px;
+  display: grid;
+  gap: 15px;
+}
+
+.announcements-content p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.announcement {
+  display: grid;
+  gap: 3px;
+}
+
+.announcement:nth-child(1),
+.announcement:nth-child(2) {
+  border-bottom: 1px solid #dbe2ec;
+  padding-bottom: 12px;
+}
+
+.announcement .text {
+  color: gray;
+}
+
+.trending-content {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 0.7rem;
+  padding: 25px;
+  display: grid;
+  gap: 15px;
 }
 
 .trending {
+  display: grid;
+  gap: 10px;
+}
 
+.trending h3 {
+  font-weight: bold;
+  height: auto;
+}
+
+.trend-element {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trend-element img {
+  width: 50px;
+  height: 50px;
+}
+
+.trend-element p {
+  color: gray;
+}
+
+.trend-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
